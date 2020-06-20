@@ -8,17 +8,17 @@
 #     http://doc.scrapy.org/en/latest/topics/settings.html
 #
 
-BOT_NAME = 'scrapy_craigslist'
+BOT_NAME = 'builtinnyc'
 
-SPIDER_MODULES = ['scrapy_craigslist.spiders']
-NEWSPIDER_MODULE = 'scrapy_craigslist.spiders'
+SPIDER_MODULES = ['builtinnyc_scrapy.spiders']
+NEWSPIDER_MODULE = 'builtinnyc_scrapy.spiders'
 
 # DUPEFILTER_DEBUG = True
 
 # DUPEFILTER_CLASS = 'scrapy_craigslist.filters.NoDuplicateUrl'
 
 ITEM_PIPELINES = {
-    'scrapy_craigslist.pipelines.DuplicatesPipeline': 10,
+    'builtinnyc_scrapy.pipelines.DuplicatesPipeline': 10,
 
 }
 
